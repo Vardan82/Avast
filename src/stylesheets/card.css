@@ -1,0 +1,161 @@
+
+  .securitHover{
+    
+    border-radius: 20px;
+  }
+
+  .headerProduct{
+    padding: 30px;
+    border: 1px solid rgb(219, 219, 219);
+    width: 282px;
+     height: 305px;
+    font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+    color: black;
+    
+   
+  }
+
+
+ .productLink{
+    flex-wrap: wrap;
+     width: 100%;
+     padding: 0 0 22px;
+     display: flex;
+     
+    } 
+    
+    .productName {
+        font-size: 20px;
+        margin-top: 12px;
+        width: 163px;
+    }
+
+    .product {
+      
+      padding: 32px;
+      
+    }
+    .productImg {
+        
+        background-color: #ff7800;
+        width: 40px;
+        height: 40px;
+        margin: 4px;
+        border-radius: 10px;
+    }
+
+    .hover{
+      display: flex;
+      flex-wrap: wrap;
+        width: 850px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s;
+        position: absolute;
+        top: 50px;
+    z-index: 99999;
+      }
+
+      .hoverBlogAvastResarchLab{
+        display: flex;
+        /* flex-wrap: wrap; */
+        
+          width: 66%;
+          background-color: white;
+          border-radius: 10px;
+          transition: 0.3s;
+          position: absolute;
+          top: 40px;
+          left: 16%;
+      z-index: 99999;
+      }
+
+      .hoverIcons{
+        display: flex;
+       width: 215px;
+       height: 40px;
+      }
+       .hoverWord{
+         font-size: 14px;
+       }
+      /* .hoverOpacityUp {
+        display: block;
+        animation-name: popupOpacityUp;
+        animation-iteration-count: 1;
+        animation-duration: .3s;
+        display: block;
+      } */
+
+      /* .hoverOpacityDown {
+        animation-name: popupOpacityDown;
+        animation-iteration-count: 1;
+        animation-duration: .3s;
+        display: none;
+      } */
+
+      .hoverPrivacy{
+        width: 846px;
+        height: 311px;
+        background-color: black;
+        border-radius: 10px;
+        transition: 0.5s;
+        position: absolute;
+        /* display: none; */
+        top: 50px;
+        
+      }
+
+      .hoverPerformance{
+        width: 846px;
+        height: 311px;
+        background-color: black;
+        border-radius: 10px;
+        transition: 0.5s;
+        position: absolute;
+        /* display: none; */
+        top: 50px;
+      }
+        .liBlogs{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+
+      .hoverBlogs{
+        width: 70%;
+        height: 166px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.5s;
+        position: absolute;
+        display: none;
+        top: 50px;
+        right: 65px;
+      }
+      .navBlogsHover{
+        background-color: white;
+        border-radius: 20px;
+  
+      }
+      .blogsHover{
+        padding: 30px;
+        width: 282px;
+         height: 205px;
+        font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+        color: black;
+        border-radius: 20px 0 0 20px;
+        margin: 20px 0;
+        
+        
+      }
+
+      .avasttName{
+       font-size:  22px;
+     }
+
+     .avastWord{
+       margin-top: 30px;
+       line-height: 35px;
+     }
+     

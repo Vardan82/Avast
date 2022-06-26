@@ -1,0 +1,224 @@
+.fotter_nav{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+    background-color: #071D2B;
+}
+
+.body_footer{
+    margin: 0 auto;
+    width: 80%;
+   
+}
+
+.avast_footer{
+   width: 100%;
+   margin: 0 63px;
+   padding: 120px 16px 56px;
+   height: 504px;
+   display: flex;
+}
+
+.avast_footer_text{
+    width: 453px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.img_footer{
+    width: 116px;
+    height: 36px;
+    margin: 0 0 32px;
+    color: white;
+    
+}
+
+.flag{
+    width: 100%;
+    margin: 0 0 24px;
+    height: 100px;
+}
+.body_flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 237px;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 16px 0 8px;
+    border-radius: 30px;
+    border: 1px solid rgb(128, 127, 127);
+}
+
+.fla_united_states{
+    width: 24px;
+    height: 24px;
+    margin: 0 8px 0 0;
+    border-radius: 50%;
+}
+
+.text_united_states{
+    color: #BBC1C7;
+    margin: 0 16px 0  0;
+}
+
+.arrow_flag{
+    width: 16px;
+    height: 16px;
+    background-color: white;
+
+}
+
+.text_for_menu_footer{
+    padding: 0 16px;
+    width: 227px;
+
+}
+
+.text_for_menu_footer p{
+    font-size: 13px;
+    color: white;
+    margin: 0 0 30px;
+}
+
+.text_for_menu_footer a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.text_for_menu_footer  li{
+    margin: 0 0 18px;
+    color: #BBC1C7;
+    font-size: 13px;
+}
+
+.text_for_menu_footer  li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.liner_footer{
+    height: 1px;
+    background-color: #21455C;
+    margin: 0  80px;
+   }
+
+.footer_icon{
+    padding-top: 50px;
+}
+
+.icon_footer{
+    color: #BBC1C7;
+    font-size: 35px;
+    margin: 0 20px 0 0;
+}
+
+.icon_footer:hover{
+    color: white;
+    
+}
+.icon_footer img{
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    
+}
+
+.icon_footer img:hover{
+   width: 32px;
+   height: 32px;
+}
+
+.footer_fotter{
+    height: 193px;
+    color: #BBC1C7;
+    margin: 0 273px;
+    padding: 48px 0;
+    margin: 0 0 0  80px;
+    font-size: 14px;
+}
+
+.footer_navigation{
+   margin: 48px  0 0 0;
+   padding: 0 5px 0 0 ;
+    
+}
+
+.privacy_policy{
+    color: #BBC1C7;
+    padding-right: 16px;
+    text-decoration: none;
+}
+
+.privacy_policy:hover{
+text-decoration: underline;
+color: white;
+}
+
+.tochka{
+    margin: 0 16px 0 0;
+}
+
+@media screen and (max-width:990px) {
+    .fotter_nav{
+        width: 667px;
+        margin-top: -160px;
+    }
+    .body_footer{
+        width: auto;
+    }
+    .avast_footer{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 120px 0 0 0;
+    }
+
+
+    .avast_footer_text{
+        width: auto;
+        align-items: center;
+    }
+
+    .footer_icon{
+        padding: 0;
+    }
+
+    .text_for_menu_footer{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .footer_fotter{
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -40px;
+        
+    }
+
+    .footer_copiright_avast_text{
+        position: relative;
+        z-index: 13;
+        top: 190px;
+    }
+
+    .privacy_policy{
+        margin: 0 0 10px;
+    }
+
+    .tochka{
+        display: none;
+    }
+}

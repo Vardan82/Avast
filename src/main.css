@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main{
+    font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+    max-width: 100%;
+    
+}
+
+.blueImg{
+    width: 100%;
+    height: 550px;
+    
+}
+
+.logo{
+    width: 290px;
+    display: flex;
+    align-items: center;
+}
+
+.logoImg{
+    margin: 0 18px  0 0;
+}
+
+.avastSecureBrowser{
+    color: white;
+    font-size: 15px;
+}
+
+.secureHider {
+    width: 1360px;
+    height: 404px;
+    position: absolute;
+    top: 200px; 
+    display: flex;
+    justify-content: space-between;
+    left: 15%;
+    top: 170px;
+}
+.secure{
+    width: 450px;
+    padding: 0 16px;
+}
+
+.logoImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+
+.securePrivate{
+    width: 395px;
+    color: white;
+    font-size: 56px;
+}
+
+.downloadDiv{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 32px 24px 32px 0;
+    color: white;
+}
+.downloadHider{
+    width: 303px;
+    height: 72px;
+    background-color: #0070F6;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+   
+}
+
+
+.downloadHider:hover{
+    height: 80px; 
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+
+
+.imgDownlod{
+    width: 32px;
+    height: 32px;
+    margin: 0 24px 0 0;
+}
+
+.downlodNow{
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+.alsoAvailabel{
+    margin: 32px 0 0;
+}
+
+.mac, .android, .os{
+    color: white;
+    
+}
+
+.mac:hover, .android:hover, .os:hover{
+    text-decoration: none;
+}
+
+ .phoneImg{
+    padding: 0 16px;
+    width: 648px;
+    height: 380px; 
+}
+
+
+.selection_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 128px;
+    font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+    background-color: #FFF1E5;
+    width: 100%;
+}
+
+ .iconsWord{
+    display: flex;
+    align-items: center;
+    width: 398px;
+    height: 128px;
+    padding: 24px 16px;
+    letter-spacing: 2px;
+}
+
+.word{
+    padding: 0 20px;
+}
+
+
+@media  screen and (max-width: 990px){
+    .main{
+        width: 812px;
+    }
+
+    .Nav{
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .blueImg{
+        width: 666px;
+        height: 898px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secureHider{
+        width: 280px;
+        height: 785px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        left: 80px;
+    }
+
+    .downloadDiv{
+        margin: 42px 0 32px;
+        
+    }
+    .downloadHider{
+        margin-left: 60px;
+    }
+
+    .secure{
+    padding: 0 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70%;
+    }
+
+    .selection_img{
+        display: flex;
+        flex-direction: column;
+        width: 666px;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 24px 0;
+    }
+    .securityAndMedia{
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+    }
+    .securityBody{
+        width: 100%;
+    }
+
+    .securePrivate{
+        font-size: 42px;
+       
+    }
+
+    .iconsWord{
+        width: 410px;
+    }
+    .word{
+        padding: 0 5px;
+    }
+    .logo{
+      margin-left: 35px;
+    }
+    .avastSecureBrowser{
+        font-size: 13px;
+    }
+
+    .downloadHider{
+        width: 250px;
+        height: 56px;
+        margin: 0 50px;
+        
+    }
+
+   .imgDownlod{
+       width: 24px;
+       height: 24px;
+       margin: 0 20px 0 0;
+   }
+
+   .downlodNow{
+       font-size: 14px;
+       margin: 0;
+       font-weight: bold;
+   }
+
+   .alsoAvailabel{
+       font-size: 14px;
+       width: 248px;
+       margin-left: 55px;
+   }
+
+.phoneImg{
+    width: 540px;
+    height: 293px;
+    margin: 0 20px 120px 20%;
+}
+
+   
+}

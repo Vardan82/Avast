@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <link rel="stylesheet" href="./React App_files/fontawesome.min.css">
+    <link rel="stylesheet" href="./React App_files/font-awesome.min.css">
+
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js"></script><style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9pbmRleC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxTQUFTO0VBQ1Q7O2NBRVk7RUFDWixtQ0FBbUM7RUFDbkMsa0NBQWtDO0FBQ3BDOztBQUVBO0VBQ0U7YUFDVztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgZm9udC1mYW1pbHk6IC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgJ1NlZ29lIFVJJywgJ1JvYm90bycsICdPeHlnZW4nLFxuICAgICdVYnVudHUnLCAnQ2FudGFyZWxsJywgJ0ZpcmEgU2FucycsICdEcm9pZCBTYW5zJywgJ0hlbHZldGljYSBOZXVlJyxcbiAgICBzYW5zLXNlcmlmO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbn1cblxuY29kZSB7XG4gIGZvbnQtZmFtaWx5OiBzb3VyY2UtY29kZS1wcm8sIE1lbmxvLCBNb25hY28sIENvbnNvbGFzLCAnQ291cmllciBOZXcnLFxuICAgIG1vbm9zcGFjZTtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>@import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Ubuntu:wght@300&display=swap);</style><style>*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.Nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 101px;
+  padding: 0 40px;
+ 
+}
+
+
+.img {
+  width: 186px;
+  height: 36px;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+   margin-top: 40px;
+   margin-left: 40px;
+}
+.ForHomeNav {
+ font-size: 14px;
+ 
+}
+
+.ForHome{
+  color: #0070f6 ;
+}
+
+.ForHome:hover{
+text-decoration: none;
+}
+
+.ForBusiness, .ForPartners, .aboutUs, .blogs, .worldwideEnglish{
+  text-decoration: none;
+  color: black;
+}
+
+.ForBusiness:hover, .ForPartners:hover, .Store:hover, .aboutUs:hover, .blogs:hover, .worldwideEnglish:hover, .support:hover, .account:hover{
+  color: #0070f6;
+}
+
+.SecurityNav {
+display: flex;
+justify-content:space-between ;
+align-items: flex-end;
+margin-top: 5px;
+position: relative;
+margin-left: -20px;
+}
+
+.arrow {
+  width: 11px;
+  height: 11px;
+  margin: 5px 0 0 7px;
+  transition: 0.5s;
+ 
+}
+
+.Security, .Privacy {
+  position: relative;
+}
+
+.arrowEng{
+  width: 11px;
+  height: 11px;
+  margin: 5px 0 0 7px;
+  transition: 0.5s;
+}
+
+.Security:hover .arrow, .Privacy:hover .arrow, .Performance:hover .arrow, .blogs:hover .arrow {
+  transition: 0.5s;
+  transform: rotate(180deg);
+}
+
+
+
+
+.ForHome, .ForBusiness, .ForPartners, .aboutUs, .blogs, .worldwideEnglish{
+  padding: 16px 16px 0;
+  
+}
+ .Security, .Performance,  .account, .support, .securityA, .performanceA, .Privacy{
+   padding: 16px;
+   color: black;
+   text-decoration: none;
+   
+ }
+
+ .AvastOne{
+
+padding:  0 0 12px 0;
+color: black;
+
+ }
+.privacyA{
+  color: #0070f6;
+  padding: 16px;
+  text-decoration: none
+}
+
+.Security:hover, .securityA:hover, .privacyA:hover, .performanceA:hover{
+  text-decoration:underline;
+  color: #0070f6;
+}
+
+.AvastOne:hover{
+  color: #0070f6
+}
+
+.New{
+  height: 24px;
+  background-color: #ffddbf;
+  border-radius: 0.5rem;
+  margin: 0 8px;
+  padding: 0 12px;
+  font-size: 11px;
+  font-size: border;
+  color: #071d2b;
+  font-weight: 880;
+  letter-spacing: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.Store{
+  display: flex;
+  margin-top: 5px;
+  padding: 16px 16px 16px 24px;
+  text-decoration: none;
+  color: #071d2b;
+}
+.Line{
+  width: 1px;
+  height: 24px;
+  background-color: #d1d0d0;
+  margin-bottom: 15px;
+  
+    
+}
+
+.shop {
+  display: block;
+  margin: 0 7px 0 0;
+  transform: rotateY(180deg);
+
+}
+
+.headerSecurityNavRigth{
+  margin: -20px;
+  width: 100%;
+  margin-right: 100px;
+}
+
+
+.AboutUsNav{
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+}
+
+.LineHederRight{
+  width: 1px;
+  height: 24px;
+  background-color: #d1d0d0;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.worldwide{
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -8px 0;
+}
+
+.worldwideEnglish{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.worldwideWord{
+ 
+ align-items: flex-end;
+}
+
+.men{
+  margin-top: 20px;
+  width: 16px;
+  height: 16px;
+  padding: 0 8px 0 0;
+}
+
+
+.supportWumen{
+  width: 16px;
+  height: 16px;
+}
+
+.supportNav{
+    margin-left: 160px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main{
+    font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+    max-width: 100%;
+    
+}
+
+.blueImg{
+    width: 100%;
+    height: 550px;
+    
+}
+
+.logo{
+    width: 290px;
+    display: flex;
+    align-items: center;
+}
+
+.logoImg{
+    margin: 0 18px  0 0;
+}
+
+.avastSecureBrowser{
+    color: white;
+    font-size: 15px;
+}
+
+.secureHider {
+    width: 1360px;
+    height: 404px;
+    position: absolute;
+    top: 200px; 
+    display: flex;
+    justify-content: space-between;
+    left: 15%;
+    top: 170px;
+}
+.secure{
+    width: 450px;
+    padding: 0 16px;
+
+}
+
+.logoImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+
+.securePrivate{
+    width: 395px;
+    color: white;
+    font-size: 56px;
+}
+
+.downloadDiv{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin: 32px 24px 32px 0;
+    color: white;
+}
+.downloadHider{
+    width: 303px;
+    height: 72px;
+    background-color: #0070F6;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+   
+}
+
+
+.downloadHider:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+
+
+.imgDownlod{
+    width: 32px;
+    height: 32px;
+    margin: 0 24px 0 0;
+}
+
+.downlodNow{
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+.alsoAvailabel{
+    margin: 32px 0 0;
+}
+
+.mac, .android, .os{
+    color: white;
+    
+}
+
+.mac:hover, .android:hover, .os:hover{
+    text-decoration: none;
+}
+
+ .phoneImg{
+    padding: 0 16px;
+    width: 648px;
+    height: 380px;
+    right: 300px;
+    
+}
+
+
+.selection {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF1E5;
+    padding: 16px 128px;
+}
+
+.iconsWord{
+    display: flex;
+    align-items: center;
+    width: 398px;
+    height: 128px;
+    padding: 24px 16px;
+    letter-spacing: 2px;
+}
+
+.word{
+    padding: 0 20px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .security{
+      max-width: 100%;
+      margin: 0 auto;
+      font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+  }
+
+.securityBacgraund{
+    background-color: #F8F9FA;
+    height: 700px;
+    position: relative;
+    z-index: 555;
+  
+}
+.securityAndMedia{
+    width: 70%;
+    margin:  0 16px;
+    padding: 128px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+.securityBody{
+    width: 45%;
+    height: 304px;
+    padding: 0 80px;
+}
+
+.wordSecurity{
+    font-size: 15px;
+    margin: 0 0 16px;
+    color: #0070F6;
+    letter-spacing: 2px;
+    
+}
+
+.body{
+    width: 552px;
+    font-size: 46px;
+    margin: 0 0 24px;
+    color: #071D2B;
+    line-height: 70px;
+}
+
+.bodyWord{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.learnMoreImg{
+    padding: 20px 20px 20px 0;
+    letter-spacing: 2px;
+}
+
+.LearnMore{
+    font-size: 12px;
+}
+
+.img{
+    width: 16px;
+    height: 16px;
+    padding: 0 0 0 8px;
+    color: #0070F6;
+    font-size: 30px;
+
+}
+.video{
+    width:  45%;
+    position: relative;
+    z-index: 666;
+    
+}
+
+.imgBrous{
+    width: 548px;
+    height: 308px;
+   
+}
+
+.play{ 
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 777;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+    cursor: pointer;
+}
+
+.websitesDanger{
+    position: absolute;
+    z-index: 444;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top:  530px;
+    
+}
+
+.hedInformations{
+    padding: 0 18px;
+}
+
+.informations{
+    height: 434px;
+    background-color: white;
+    padding: 48px;
+    border-radius:  0 20px 20px 20px;
+    box-shadow: 5px 5px 14px 5px #f0f0f0; 
+
+}
+
+.plastik{
+    width: 80px;
+    height: 80px;
+}
+
+.newsWord{
+    font-size: 24px;
+    margin:  0 0 16px;
+    line-height: 40px;
+}
+
+.informations span{
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 3233;
+    background: #144d64cf;
+    display: none;
+}
+
+.popup {
+    width: 61%;
+    position: fixed;
+    height: 50vh;
+    background: white;
+    z-index: 23232;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  
+}
+
+.cross{
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 333;
+    top: 11%;
+    left: 93%;
+   
+}
+
+.cross:hover{
+    background-color: black;
+}
+
+
+.avastHover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 40px;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    top: 7px;
+    background-color: white;
+    box-shadow: 5px 5px 14px 5px #f0f0f0;
+    top: 0;
+    transform: 2s;
+
+}
+
+.avast{
+    width: 291px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.avatsHoverImg{
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+   
+}
+
+.avastHoverWord{
+    font-size: 20px;
+    padding: 0 16px ;
+}
+
+.buttonDownload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    background-color: #0070F6;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.DownloadHover{
+    font-size: 12px;
+    color: white;
+  
+}
+
+
+.buttonDownload:hover{
+    width: 171px;
+    height: 42px;
+    transition: 0.3s;
+    transform: scale(1.03);
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9zdHlsZXNoZWV0cy9zZWN1cml0eS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxzQkFBc0I7SUFDdEIsVUFBVTtJQUNWLFNBQVM7RUFDWDs7O0VBR0E7TUFDSSxlQUFlO01BQ2YsY0FBYztNQUNkLHFEQUFxRDtFQUN6RDs7QUFFRjtJQUNJLHlCQUF5QjtJQUN6QixhQUFhO0lBQ2Isa0JBQWtCO0lBQ2xCLFlBQVk7O0FBRWhCO0FBQ0E7SUFDSSxVQUFVO0lBQ1YsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixjQUFjOztBQUVsQjtBQUNBO0lBQ0ksVUFBVTtJQUNWLGFBQWE7SUFDYixlQUFlO0FBQ25COztBQUVBO0lBQ0ksZUFBZTtJQUNmLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsbUJBQW1COztBQUV2Qjs7QUFFQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixjQUFjO0lBQ2QsZUFBZTs7QUFFbkI7QUFDQTtJQUNJLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsWUFBWTs7QUFFaEI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osYUFBYTs7QUFFakI7O0FBRUE7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osVUFBVTtJQUNWLFFBQVE7SUFDUiwrQkFBK0I7SUFDL0IsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osVUFBVTtJQUNWLGNBQWM7SUFDZCxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLE9BQU87SUFDUCxRQUFRO0lBQ1IsV0FBVzs7QUFFZjs7QUFFQTtJQUNJLGVBQWU7Ozs7O0FBS25COztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsYUFBYTtJQUNiLGdDQUFnQztJQUNoQyxvQ0FBb0M7O0FBRXhDOztBQUVBO0lBQ0ksV0FBVztJQUNYLFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsaUJBQWlCO0lBQ2pCLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsV0FBVztJQUNYLGFBQWE7SUFDYixPQUFPO0lBQ1AsTUFBTTtJQUNOLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsYUFBYTtBQUNqQjs7QUFFQTtJQUNJLFVBQVU7SUFDVixlQUFlO0lBQ2YsWUFBWTtJQUNaLGlCQUFpQjtJQUNqQixjQUFjO0lBQ2QsU0FBUztJQUNULFFBQVE7SUFDUixnQ0FBZ0M7SUFDaEMsbUJBQW1CO0lBQ25CLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGFBQWE7O0FBRWpCOztBQUVBO0lBQ0ksV0FBVztJQUNYLFlBQVk7SUFDWix1QkFBdUI7SUFDdkIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osUUFBUTtJQUNSLFNBQVM7O0FBRWI7O0FBRUE7SUFDSSx1QkFBdUI7QUFDM0I7OztBQUdBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLFlBQVk7SUFDWixlQUFlO0lBQ2YsT0FBTztJQUNQLGVBQWU7SUFDZixZQUFZO0lBQ1osUUFBUTtJQUNSLHVCQUF1QjtJQUN2QixvQ0FBb0M7SUFDcEMsTUFBTTs7SUFFTixhQUFhOztBQUVqQjs7QUFFQTtJQUNJLFlBQVk7SUFDWixhQUFhO0lBQ2IsbUJBQW1COztBQUV2Qjs7QUFFQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osV0FBVzs7QUFFZjs7QUFFQTtJQUNJLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osWUFBWTtJQUNaLHlCQUF5QjtJQUN6QixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksZUFBZTtJQUNmLFlBQVk7O0FBRWhCOzs7QUFHQTtJQUNJLFlBQVk7SUFDWixZQUFZO0lBQ1osZ0JBQWdCO0lBQ2hCLHNCQUFzQjtBQUMxQiIsInNvdXJjZXNDb250ZW50IjpbIip7XG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICBwYWRkaW5nOiAwO1xuICAgIG1hcmdpbjogMDtcbiAgfVxuXG5cbiAgLnNlY3VyaXR5e1xuICAgICAgbWF4LXdpZHRoOiAxMDAlO1xuICAgICAgbWFyZ2luOiAwIGF1dG87XG4gICAgICBmb250LWZhbWlseTogQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiwgJ1JhamRoYW5pJztcbiAgfVxuXG4uc2VjdXJpdHlCYWNncmF1bmR7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y4RjlGQTtcbiAgICBoZWlnaHQ6IDcwMHB4O1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB6LWluZGV4OiA1NTU7XG4gIFxufVxuLnNlY3VyaXR5QW5kTWVkaWF7XG4gICAgd2lkdGg6IDcwJTtcbiAgICBtYXJnaW46ICAwIDE2cHg7XG4gICAgcGFkZGluZzogMTI4cHggMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMCBhdXRvO1xuXG59XG4uc2VjdXJpdHlCb2R5e1xuICAgIHdpZHRoOiA0NSU7XG4gICAgaGVpZ2h0OiAzMDRweDtcbiAgICBwYWRkaW5nOiAwIDgwcHg7XG59XG5cbi53b3JkU2VjdXJpdHl7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG1hcmdpbjogMCAwIDE2cHg7XG4gICAgY29sb3I6ICMwMDcwRjY7XG4gICAgbGV0dGVyLXNwYWNpbmc6IDJweDtcbiAgICBcbn1cblxuLmJvZHl7XG4gICAgd2lkdGg6IDU1MnB4O1xuICAgIGZvbnQtc2l6ZTogNDZweDtcbiAgICBtYXJnaW46IDAgMCAyNHB4O1xuICAgIGNvbG9yOiAjMDcxRDJCO1xuICAgIGxpbmUtaGVpZ2h0OiA3MHB4O1xufVxuXG4uYm9keVdvcmR7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAzNXB4O1xufVxuXG4ubGVhcm5Nb3JlSW1ne1xuICAgIHBhZGRpbmc6IDIwcHggMjBweCAyMHB4IDA7XG4gICAgbGV0dGVyLXNwYWNpbmc6IDJweDtcbn1cblxuLkxlYXJuTW9yZXtcbiAgICBmb250LXNpemU6IDEycHg7XG59XG5cbi5pbWd7XG4gICAgd2lkdGg6IDE2cHg7XG4gICAgaGVpZ2h0OiAxNnB4O1xuICAgIHBhZGRpbmc6IDAgMCAwIDhweDtcbiAgICBjb2xvcjogIzAwNzBGNjtcbiAgICBmb250LXNpemU6IDMwcHg7XG5cbn1cbi52aWRlb3tcbiAgICB3aWR0aDogIDQ1JTtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgei1pbmRleDogNjY2O1xuICAgIFxufVxuXG4uaW1nQnJvdXN7XG4gICAgd2lkdGg6IDU0OHB4O1xuICAgIGhlaWdodDogMzA4cHg7XG4gICBcbn1cblxuLnBsYXl7IFxuICAgIHdpZHRoOiA0OHB4O1xuICAgIGhlaWdodDogNDhweDtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogNzc3O1xuICAgIHJpZ2h0OiA1MCU7XG4gICAgdG9wOiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSAtNTAlKTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi53ZWJzaXRlc0RhbmdlcntcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogNDQ0O1xuICAgIHdpZHRoOiA2MCU7XG4gICAgbWFyZ2luOiAwIGF1dG87XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBsZWZ0OiAwO1xuICAgIHJpZ2h0OiAwO1xuICAgIHRvcDogIDUzMHB4O1xuICAgIFxufVxuXG4uaGVkSW5mb3JtYXRpb25ze1xuICAgIHBhZGRpbmc6IDAgMThweDtcbiAgICBcbiAgICBcbiAgICBcblxufVxuXG4uaW5mb3JtYXRpb25ze1xuICAgIC8qIHdpZHRoOiAzMCU7ICovXG4gICAgaGVpZ2h0OiA0MzRweDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiA0OHB4O1xuICAgIGJvcmRlci1yYWRpdXM6ICAwIDIwcHggMjBweCAyMHB4O1xuICAgIGJveC1zaGFkb3c6IDVweCA1cHggMTRweCA1cHggI2YwZjBmMDsgXG5cbn1cblxuLnBsYXN0aWt7XG4gICAgd2lkdGg6IDgwcHg7XG4gICAgaGVpZ2h0OiA4MHB4O1xufVxuXG4ubmV3c1dvcmR7XG4gICAgZm9udC1zaXplOiAyNHB4O1xuICAgIG1hcmdpbjogIDAgMCAxNnB4O1xuICAgIGxpbmUtaGVpZ2h0OiA0MHB4O1xufVxuXG4uaW5mb3JtYXRpb25zIHNwYW57XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGxpbmUtaGVpZ2h0OiA0MHB4O1xufVxuXG4ubWFzayB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgbGVmdDogMDtcbiAgICB0b3A6IDA7XG4gICAgei1pbmRleDogMzIzMztcbiAgICBiYWNrZ3JvdW5kOiAjMTQ0ZDY0Y2Y7XG4gICAgZGlzcGxheTogbm9uZTtcbn1cblxuLnBvcHVwIHtcbiAgICB3aWR0aDogNjElO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBoZWlnaHQ6IDUwdmg7XG4gICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgei1pbmRleDogMjMyMzI7XG4gICAgbGVmdDogNTAlO1xuICAgIHRvcDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIFxufVxuXG4uY3Jvc3N7XG4gICAgd2lkdGg6IDQ4cHg7XG4gICAgaGVpZ2h0OiA0OHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogMzMzO1xuICAgIHRvcDogMTElO1xuICAgIGxlZnQ6IDkzJTtcbiAgIFxufVxuXG4uY3Jvc3M6aG92ZXJ7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG59XG5cblxuLmF2YXN0SG92ZXJ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDgwcHg7XG4gICAgcGFkZGluZzogMCA0MHB4O1xuICAgIGxlZnQ6IDA7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHotaW5kZXg6IDk5OTtcbiAgICB0b3A6IDdweDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiA1cHggNXB4IDE0cHggNXB4ICNmMGYwZjA7XG4gICAgdG9wOiAwO1xuICBcbiAgICB0cmFuc2Zvcm06IDJzO1xuXG59XG5cbi5hdmFzdHtcbiAgICB3aWR0aDogMjkxcHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIFxufVxuXG4uYXZhdHNIb3ZlckltZ3tcbiAgICB3aWR0aDogMzJweDtcbiAgICBoZWlnaHQ6IDMycHg7XG4gICAgbWFyZ2luOiA0cHg7XG4gICBcbn1cblxuLmF2YXN0SG92ZXJXb3Jke1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBwYWRkaW5nOiAwIDE2cHggO1xufVxuXG4uYnV0dG9uRG93bmxvYWR7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHdpZHRoOiAxNzBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzAwNzBGNjtcbiAgICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICAgIHRyYW5zaXRpb246IDAuM3M7XG59XG5cbi5Eb3dubG9hZEhvdmVye1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICBjb2xvcjogd2hpdGU7XG4gIFxufVxuXG5cbi5idXR0b25Eb3dubG9hZDpob3ZlcntcbiAgICB3aWR0aDogMTcxcHg7XG4gICAgaGVpZ2h0OiA0MnB4O1xuICAgIHRyYW5zaXRpb246IDAuM3M7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxLjAzKTtcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .headerPrivacy{
+      position: relative;
+      top: 400px;
+  }
+
+.privacy{
+    display: flex;
+    justify-content: center;
+    width: o auto;
+    font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+  
+}
+
+.privacyImg{
+    width: 35%;
+    padding: 0 16px;
+}
+
+.imgPrivacy{
+    width: 548px;
+    height: 312px;
+}
+
+.personalData{
+    width: 30%;
+    padding: 0 16px;
+}
+
+.personalWord{
+    font-size: 46px;
+    margin: 0 0 24px;
+    line-height: 70px;
+}
+
+.personalBiznes{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.privascy{
+    color: #0070f6;
+    font-size: 15px bold;
+    letter-spacing: 5px;
+}
+
+
+.learnMoreImg{
+    padding: 20px 20px 20px 0;
+}
+.learnMore{
+    font-size: 12px bold;
+}
+
+.imgLernMore{
+    margin: 0 0 0 8px;
+    align-items: center;
+}
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9Qcml2YWN5LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLHNCQUFzQjtJQUN0QixVQUFVO0lBQ1YsU0FBUztFQUNYOzs7RUFHQTtNQUNJLGtCQUFrQjtNQUNsQixVQUFVO0VBQ2Q7O0FBRUY7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGFBQWE7SUFDYixxREFBcUQ7O0FBRXpEOztBQUVBO0lBQ0ksVUFBVTtJQUNWLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osYUFBYTtBQUNqQjs7QUFFQTtJQUNJLFVBQVU7SUFDVixlQUFlO0FBQ25COztBQUVBO0lBQ0ksZUFBZTtJQUNmLGdCQUFnQjtJQUNoQixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSxlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCOztBQUVBO0lBQ0ksY0FBYztJQUNkLG9CQUFvQjtJQUNwQixtQkFBbUI7QUFDdkI7OztBQUdBO0lBQ0kseUJBQXlCO0FBQzdCO0FBQ0E7SUFDSSxvQkFBb0I7QUFDeEI7O0FBRUE7SUFDSSxpQkFBaUI7SUFDakIsbUJBQW1CO0FBQ3ZCIiwic291cmNlc0NvbnRlbnQiOlsiKntcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgIHBhZGRpbmc6IDA7XG4gICAgbWFyZ2luOiAwO1xuICB9XG5cblxuICAuaGVhZGVyUHJpdmFjeXtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIHRvcDogNDAwcHg7XG4gIH1cblxuLnByaXZhY3l7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICB3aWR0aDogbyBhdXRvO1xuICAgIGZvbnQtZmFtaWx5OiBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmLCAnUmFqZGhhbmknO1xuICBcbn1cblxuLnByaXZhY3lJbWd7XG4gICAgd2lkdGg6IDM1JTtcbiAgICBwYWRkaW5nOiAwIDE2cHg7XG59XG5cbi5pbWdQcml2YWN5e1xuICAgIHdpZHRoOiA1NDhweDtcbiAgICBoZWlnaHQ6IDMxMnB4O1xufVxuXG4ucGVyc29uYWxEYXRhe1xuICAgIHdpZHRoOiAzMCU7XG4gICAgcGFkZGluZzogMCAxNnB4O1xufVxuXG4ucGVyc29uYWxXb3Jke1xuICAgIGZvbnQtc2l6ZTogNDZweDtcbiAgICBtYXJnaW46IDAgMCAyNHB4O1xuICAgIGxpbmUtaGVpZ2h0OiA3MHB4O1xufVxuXG4ucGVyc29uYWxCaXpuZXN7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAzMHB4O1xufVxuXG4ucHJpdmFzY3l7XG4gICAgY29sb3I6ICMwMDcwZjY7XG4gICAgZm9udC1zaXplOiAxNXB4IGJvbGQ7XG4gICAgbGV0dGVyLXNwYWNpbmc6IDVweDtcbn1cblxuXG4ubGVhcm5Nb3JlSW1ne1xuICAgIHBhZGRpbmc6IDIwcHggMjBweCAyMHB4IDA7XG59XG4ubGVhcm5Nb3Jle1xuICAgIGZvbnQtc2l6ZTogMTJweCBib2xkO1xufVxuXG4uaW1nTGVybk1vcmV7XG4gICAgbWFyZ2luOiAwIDAgMCA4cHg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+  
+  .securitHover{
+    /* display: flex; */
+    color: black;
+
+  }
+
+  .headerProduct{
+    padding: 30px;
+    border: 1px solid rgb(219, 219, 219);
+    width: 282px;
+     height: 205px;
+    font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+   
+  }
+
+
+ .productLink{
+    flex-wrap: wrap;
+     width: 100%;
+     padding: 0 0 22px;
+     display: flex;
+     
+    } 
+    
+    .productName {
+        font-size: 20px;
+        margin-top: 12px;
+        width: 163px;
+    }
+
+    .product {
+      
+      padding: 32px;
+      
+    }
+    .productImg {
+        
+        background-color: #ff7800;
+        width: 40px;
+        height: 40px;
+        margin: 4px;
+        border-radius: 10px;
+    }
+
+    .hover{
+      display: flex;
+      flex-wrap: wrap;
+        width: 850px;
+        background-color: white;
+        border-radius: 10px;
+        transition: 0.3s;
+        position: absolute;
+        top: 50px;
+    z-index: 99999;
+
+      }
+
+      .hoverIcons{
+        display: flex;
+       width: 215px;
+       height: 40px;
+      }
+       .hoverWord{
+         font-size: 14px;
+       }
+         .hoverPrivacy{
+        width: 846px;
+        height: 311px;
+        background-color: black;
+        border-radius: 10px;
+        transition: 0.5s;
+        position: absolute;
+        top: 50px;
+        
+      }
+
+      .hoverPerformance{
+        width: 846px;
+        height: 311px;
+        background-color: black;
+        border-radius: 10px;
+        transition: 0.5s;
+        position: absolute;
+        top: 50px;
+      }
+
+
+
+      .hoverBlogs{
+        width: 1277px;
+        height: 166px;
+        background-color: black;
+        border-radius: 10px;
+        transition: 0.5s;
+        position: absolute;
+        top: 50px;
+        right: 65px;
+      }
+    

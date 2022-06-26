@@ -1,0 +1,313 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
+.Nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 101px;
+  padding: 0 40px;
+ 
+}
+
+
+.img {
+  width: 186px;
+  height: 36px;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+   margin-top: 40px;
+   margin-left: 40px;
+}
+.ForHomeNav {
+ font-size: 14px;
+ 
+}
+
+.ForHome{
+  color: #0070f6 ;
+}
+
+.ForHome:hover{
+text-decoration: none;
+}
+
+.ForBusiness, .ForPartners, .aboutUs, .blogs, .worldwideEnglish{
+  text-decoration: none;
+  color: black;
+}
+
+.ForBusiness:hover, .ForPartners:hover, .Store:hover, .aboutUs:hover, .blogs:hover, .worldwideEnglish:hover, .support:hover, .account:hover{
+  color: #0070f6;
+}
+
+.SecurityNav {
+display: flex;
+justify-content:space-between ;
+align-items: flex-end;
+margin-top: 5px;
+position: relative;
+margin-left: -20px;
+}
+
+.arrow {
+  width: 11px;
+  height: 11px;
+  margin: 5px 0 0 7px;
+  transition: 0.5s;
+ 
+}
+
+.Security, .Privacy {
+  position: relative;
+}
+
+.arrowEng{
+  width: 11px;
+  height: 11px;
+  margin: 5px 0 0 7px;
+  transition: 0.5s;
+}
+
+.Security:hover .arrow, .Privacy:hover .arrow, .Performance:hover .arrow, .blogs:hover .arrow {
+  transition: 0.5s;
+  transform: rotate(180deg);
+}
+.ForHome, .ForBusiness, .ForPartners, .aboutUs, .blogs, .worldwideEnglish{
+  padding: 16px 16px 0;
+  
+}
+ .Security, .Performance,  .account, .support, .securityA, .performanceA, .Privacy{
+   padding: 16px;
+   color: black;
+   text-decoration: none;
+   
+ }
+
+ .AvastOne{
+
+padding:  0 0 12px 0;
+color: black;
+
+ }
+.privacyA{
+  color: #0070f6;
+  padding: 16px;
+  text-decoration: none
+}
+
+.Security:hover, .securityA:hover, .privacyA:hover, .performanceA:hover{
+  text-decoration:underline;
+  color: #0070f6;
+}
+
+.AvastOne:hover{
+  color: #0070f6
+}
+
+.New{
+  height: 24px;
+  background-color: #ffddbf;
+  border-radius: 0.5rem;
+  margin: 0 8px;
+  padding: 0 12px;
+  font-size: 11px;
+  font-size: border;
+  color: #071d2b;
+  font-weight: 880;
+  letter-spacing: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.Store{
+  display: flex;
+  margin-top: 5px;
+  padding: 16px 16px 16px 24px;
+  text-decoration: none;
+  color: #071d2b;
+}
+.Line{
+  width: 1px;
+  height: 24px;
+  background-color: #d1d0d0;
+  margin-bottom: 15px;
+  
+    
+}
+
+.shop {
+  display: block;
+  margin: 0 7px 0 0;
+  transform: rotateY(180deg);
+
+}
+
+.headerSecurityNavRigth{
+  margin: -20px;
+  width: 100%;
+  margin-right: 100px;
+  
+}
+
+
+.AboutUsNav{
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+}
+
+.LineHederRight{
+  width: 1px;
+  height: 24px;
+  background-color: #d1d0d0;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+
+.worldwide{
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -8px 0;
+}
+
+.worldwideEnglish{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.worldwideWord{
+ align-items: flex-end;
+}
+
+.men{
+  margin-top: 20px;
+  width: 16px;
+  height: 16px;
+  padding: 0 8px 0 0;
+}
+
+
+.supportWumen{
+  width: 16px;
+  height: 16px;
+}
+
+.supportNav{
+  margin-left: 160px;
+}
+
+.img_openmeniu_media{
+    display: none; 
+    width: 44px;
+    height: 44px;
+    background-image: url(../public/img/burger.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: white;
+    margin-left:  580px;
+    margin-top: -54px;
+    position: absolute;
+    z-index: 222222;
+  
+}
+
+.accordion-item{
+  display: none;
+}
+
+
+
+
+@media  screen and (max-width: 990px){
+.Nav{
+  width: 716px;
+  height: 64px;
+
+}
+
+
+.headerForHomeSecurity, .headerSecurityNavRigth{
+  display: none;
+}
+
+.img_openmeniu_media{
+ display: block;
+}
+
+.accordion{
+  width: 526px;
+  height: 537px;
+  background-color: white;
+  position: absolute;
+  z-index: 1111111111;
+  border-top: 1px solid rgb(214, 214, 214);
+  margin-left:  115px;
+  margin-top: 0x;
+  border-radius: 0 0 20px 20px;
+  padding: 20px 10px 20px 20px;
+}
+
+.acardion_text{
+  border: 1px 0 1px 0 solid rgb(214, 214, 214);
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-content_header{
+  font-size: 15px;
+  padding:  0 0 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.accordion-content{
+font-size: 12px;
+width: 446px;
+height: 41px;
+margin: 0 0 0  25px;
+}
+
+.accordion-item{
+display: flex;
+margin: 20px  18px 0 0;
+border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.right_acardion{
+ margin: 20px 20px 0 0px;
+ list-style-type: none;
+}
+.header{
+  display: none;
+}
+
+.accordion-content-flag{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 5px 5px 0 0;
+}
+}

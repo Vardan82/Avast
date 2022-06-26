@@ -1,0 +1,371 @@
+
+
+  .security{
+      max-width: 100%;
+      margin: 0 auto;
+      font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+  }
+
+.securityBacgraund{
+    background-color: #F8F9FA;
+    height: 700px;
+    position: relative;
+    z-index: 555;
+  
+}
+.securityAndMedia{
+    width: 84%;
+    margin:  0 16px;
+    padding: 128px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+.securityBody{
+    width: 45%;
+    height: 304px;
+    padding: 0 80px;
+}
+
+.wordSecurity{
+    font-size: 15px;
+    margin: 0 0 16px;
+    color: #0070F6;
+    letter-spacing: 2px;
+    
+}
+
+.body{
+    width: 552px;
+    font-size: 46px;
+    margin: 0 0 24px;
+    color: #071D2B;
+    line-height: 70px;
+}
+
+.bodyWord{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.learnMoreImg{
+    padding: 20px 20px 20px 0;
+    letter-spacing: 2px;
+}
+
+.LearnMore{
+    font-size: 12px;
+}
+
+.img{
+    width: 16px;
+    height: 16px;
+    padding: 0 0 0 8px;
+    color: #0070F6;
+    font-size: 30px;
+
+}
+.video{
+    width:  45%;
+    position: relative;
+    z-index: 666;
+    
+}
+
+.imgBrous{
+    width: 516px;
+    height: 290px;
+   
+}
+
+.play{ 
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 777;
+    right: 55%;
+    top: 41%;
+    cursor: pointer;
+    
+}
+
+.websitesDanger{
+    position: absolute;
+    z-index: 444;
+    width: 62%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top:  530px;
+    
+}
+
+.hedInformations{
+    padding: 0 18px;
+    width: 61%;
+}
+
+.informations{
+    height: 434px;
+    background-color: white;
+    padding: 48px;
+    border-radius:  0 20px 20px 20px;
+    box-shadow: 5px 5px 14px 5px #f0f0f0; 
+
+}
+
+.plastik{
+    width: 80px;
+    height: 80px;
+}
+
+.newsWord{
+    font-size: 24px;
+    margin:  0 0 16px;
+    line-height: 40px;
+}
+
+.informations span{
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.mask {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 3233;
+    background: #144d64cf;
+    display: none;
+}
+
+.popup {
+    width: 60%;
+    position: fixed;
+    height: 630px;
+    background: white;
+    z-index: 23232;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    display: none;
+    
+  
+}
+
+.videpPopup{
+    margin: 4% 9%;
+    
+}
+
+.cross{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 333;
+    top: 6%;
+    left: 93%;
+    font-size: 30px;
+   
+}
+
+.cross:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.avastHover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 40px;
+    left: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    background-color: white;
+    box-shadow: 5px 5px 14px 5px #f0f0f0;
+    
+}
+
+.avast{
+    width: 291px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.avatsHoverImg{
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+   
+}
+
+.avastHoverWord{
+    font-size: 20px;
+    padding: 8px 16px ;
+}
+
+.buttonDownload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    background-color: #0070F6;
+    border-radius: 20px;
+    transform: 3s;
+    text-transform: uppercase;
+    
+}
+
+.DownloadHover{
+    font-size: 12px;
+    color: white;
+    
+    
+  
+}
+
+
+.buttonDownload:hover{
+    width: 171px;
+    height: 42px;
+    transition: 0.3s;
+    transform: scale(1.03);
+    
+}
+
+@media  screen and (max-width: 990px){
+    .securityBody, .securityAndMedia{
+        width: 96%;
+        text-align: center;
+        padding: 55px 27px;
+    }
+
+    .securityBacgraund{
+        width: 666px;
+    }
+
+    .body{
+        width: 508px;
+        font-size: 31px;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .bodyWord{
+        font-size: 16px;
+        margin-top: 400px;
+    }
+
+    .video{
+        width: 100%;
+        top: -100px;
+        
+    }
+
+    .imgBrous{
+        width: 508px;
+    }
+    .play{
+        right: 47%;
+    }
+
+    .websitesDanger{
+        position:initial;
+    }
+
+    .avastHover{
+        width: 667px;
+        height: 66px;
+        padding: 0 20px;
+    }
+
+    .avastHoverWord{
+        display: none;
+    }
+
+    .buttonDownload{
+        width: 138px;
+        height: 36px;
+        font-weight: bold;
+    }
+
+    .avatsHoverImg{
+        border-radius: 10px;
+        border: 1px solid #979797;
+    }
+    .hedInformations {
+        height: 320px;
+    }
+   
+
+    .websitesDanger{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 0 0;
+        width: 666px;
+    }
+
+    .hedInformations{
+        width: 540px;
+        height: 247px;
+        margin: 0 0 16px;
+        padding: 32px;
+
+    } 
+    .informations{
+        width: 508px;
+        height: 247px;
+        padding: 16px;
+    }
+
+    .newsWord{
+        font-size: 18px;
+        margin: 0 0 16px;
+    }
+
+    .informations span{
+        font-size: 16px;
+    }
+
+    .headerPrivacy{
+        position: relative;
+        margin-top: 140vh;
+    }
+
+    .privacy{
+        flex-direction: column;
+        
+    }
+
+    .personalData{
+        margin-top: -550px;
+        text-align: center;
+    }
+
+    .x{
+        width: 32px;
+        height: 32px;
+    }
+  
+   
+
+}

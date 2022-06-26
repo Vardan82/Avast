@@ -1,0 +1,114 @@
+
+
+.get_brauzer{
+    font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+    width: 100%;
+}
+
+.get_brauzer_text_nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding: 128px 0 0;
+}
+
+
+.get_brauzer_words{
+    width: 50%;
+}
+.get_brauzer_text{
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.blue_more_buuton{
+    width: 50%;
+    height: 156px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.blue_more_text_nav{
+    width: 360px;
+    height: 66px;
+    border-radius: 30px;
+    border: 4px solid #0070F6;
+    text-decoration: none;
+    color: #0070F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+
+.blue_more_text_nav:hover{
+    background-color: #0070F6;
+   
+}
+
+.blue_more_text_nav:hover .blue_more_text{
+    color: white;
+  
+}
+
+.blue_more_text_nav:hover .icon_get_brauzer{
+    color: white;
+   
+}
+
+.blue_more_text{
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.icon_get_brauzer{
+    width: 24px;
+    height: 24px;
+    font-size: 28px;
+    margin: 0 0 0 10px;
+    color: #0070F6;
+}
+
+
+@media screen and (max-width: 990px) {
+    .get_brauzer{
+        width: 667px;
+    }
+
+    .get_brauzer_text_nav{
+        width: 667px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 20px;
+        margin: 128px 0 0 0;
+        
+    }
+    .get_brauzer_words{
+        width: 100%;
+    }
+    .get_brauzer_text{
+        font-size: 34px;
+        font-weight: bold;
+    }
+    .blue_more_buuton{
+        display: flex;
+        justify-content: center;
+        margin: 0 16px;
+    }
+
+    .header_selection{
+        width: 667px;
+    }
+
+    .left_hover, .right_hover{
+        display: none;
+    }
+    
+}

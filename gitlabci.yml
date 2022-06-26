@@ -1,0 +1,20 @@
+stages:
+    - CREATE_DOCKER_IMAGE
+    - DEPLOY
+
+BUILDING IMAGE:
+    stage: CREATE_DOCKER_IMAGE
+    script:
+        - docker build -t "$CI_DOCKER_IMAGE" .
+    tags:
+        - test-avast
+
+DEPLOY_DOCKER:
+    stage: DEPLOY
+    before_script:
+      - docker login -u "$CI_REGISTERY_USER" -p "$CI_REGISTERY_PASSWORD"
+    script:
+      - docker push "$CI_DOCKER_IMAGE"
+    tags:
+        - test-avast
+

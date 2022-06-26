@@ -1,0 +1,219 @@
+.faster_Brauzins_Avast_nav{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif, 'Rajdhani';
+}
+
+.main_Secure_faster_brauzing{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.secure_Hider_brauzing{
+   background-image: url("../../public/img/images color.jpeg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 558px;
+   text-align: center;
+    padding: 108px 0;
+    height: 588px;
+   
+}
+
+.logo-brauzing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7800;
+    font-size: 15px;
+    margin: 0 0 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.text_browsong{
+    font-size: 46px;
+    color: white;
+    margin: 0 0 16px;
+    font-weight: bold;
+}
+
+.donwn_load{
+    width: 303px;
+    height: 72px;
+    background-color: #0070f6;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s;
+   
+}
+
+.donwn_load:hover{
+    width: 312px;
+    height: 80px;
+}
+
+.download_Hider_brauzing{
+   height: 80px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+   
+}
+
+
+.download_Div_brauzing{
+    height: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.img_Downlod_brauzing{
+    width: 32px;
+    height: 32px;
+    margin: 0 44px 0 0;
+}
+
+.downlod_Now_brauzing{
+    color: white;
+    font-size: 18px
+}
+
+.also_Availabel_brauzing{
+    color: white;
+    
+    
+}
+
+.mac_brauzing, .android_brauzing, .os_brauzing{
+    color: white;
+}
+
+.mac_brauzing:hover, .android_brauzing:hover, .os_brauzing:hover{
+    text-decoration: none;
+}
+
+.avast_intereest{
+    width: 100%;
+    background: #F8F9FA;
+    padding: 128px;
+}
+
+.interest_heder{
+    margin: 0 auto;
+    width: 80%;
+    height: 455px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 0;
+}
+
+.interest_heder_text{
+    font-size: 46px;
+    margin: 0 0 56px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.avast_branch-antitrack{
+   
+    height: 400px;
+    padding: 30px 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 30px 30px 30px;
+    margin: 0 20px;
+}
+
+.informations_intereest{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.productImg{
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+}
+
+.avast_securLine_breach_guard_anti_tac-text{
+    margin: 16px 0 0;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+.avast_securLine_breach_guard_anti_tac-text:hover{
+    text-decoration: none;
+}
+.hoverIcons{
+    font-size: 16px;
+    margin: 18px 0 0;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #545555;
+ 
+}
+
+.div_img{
+    margin: 0 8px;
+}
+
+.enjoyin_online-text{
+    font-size: 16px;
+    margin: 24px 0;
+    text-align: center;
+    line-height: 30px;
+}
+
+.learn_blue_fotter{
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+   
+}
+
+.learn_blue_fotter:hover .learn_blue_fotter{
+    color: #0070f6;
+}
+
+.img_blue_fotter{
+   color: #0070f6;
+   font-size: 30px;
+}
+
+@media screen and (max-width: 990px) {
+    .faster_Brauzins_Avast_nav {
+        width: 667px;
+    }
+
+    .avast_intereest{
+        padding: 128px 0;
+    }
+
+    .interest_heder{
+     display: flex;
+     flex-direction: column;
+    width:  auto;
+    height: auto;
+    margin-top: -100px;
+      
+    }
+
+    .informations_intereest{
+        width: auto;
+        padding: 16px;
+    }
+}
